@@ -8,3 +8,4 @@ Made changes in MASTER branch
 Testing merging
 fast-forward for multiple commits testing
 more merging testing
+moving master branch one commit ahead
