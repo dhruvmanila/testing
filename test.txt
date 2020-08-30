@@ -4,3 +4,4 @@ Testing newline
 So, whenever you append, you write in a newline.
 But if you want to write more paragraphs in a single line use the escape characters and enable it with -e
 Let us see the symbols for git short status command
+Made changes in MASTER branch
