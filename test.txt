@@ -8,9 +8,10 @@ Made changes in MASTER branch
 Testing merging
 fast-forward for multiple commits testing
 more merging testing
-<<<<<<< HEAD
 moving master branch one commit ahead
-=======
+
 there is a conflict in my branch merge testing
 moving merging branch one commit ahead than master branch
->>>>>>> merging
+
+Testing git branches
+moving testing branch ahead
