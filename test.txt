@@ -9,3 +9,4 @@ Testing merging
 fast-forward for multiple commits testing
 more merging testing
 there is a conflict in my branch merge testing
+moving merging branch one commit ahead than master branch
