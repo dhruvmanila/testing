@@ -7,3 +7,4 @@ Let us see the symbols for git short status command
 Made changes in MASTER branch
 Testing merging
 fast-forward for multiple commits testing
+more merging testing
