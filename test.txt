@@ -8,6 +8,8 @@ Let us see the symbols for git short status command
 Made changes in MASTER branch
 Testing merging
 
+some print statements here
+
 fast-forward for multiple commits testing
 more merging testing
 moving master branch one commit ahead
@@ -21,3 +23,5 @@ moving testing branch ahead
 
 Fixing the bug
 testing some more
+
+fixed that little bug
