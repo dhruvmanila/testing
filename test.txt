@@ -15,3 +15,4 @@ moving merging branch one commit ahead than master branch
 
 Testing git branches
 moving testing branch ahead
+Fixing the bug
