@@ -2,10 +2,16 @@ This is a test
 
 Testing newline
 So, whenever you append, you write in a newline.
+
+print(test)
+
 But if you want to write more paragraphs in a single line use the escape characters and enable it with -e
 Let us see the symbols for git short status command
 Made changes in MASTER branch
 Testing merging
+
+print(test)
+
 fast-forward for multiple commits testing
 more merging testing
 moving master branch one commit ahead
@@ -15,3 +21,6 @@ moving merging branch one commit ahead than master branch
 
 Testing git branches
 moving testing branch ahead
+
+print(test)
+
