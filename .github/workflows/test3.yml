@@ -1,0 +1,9 @@
+on: [push, pull_request]
+jobs:
+  timepass:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo $GITHUB_SHA
+      - run: echo $GITHUB_REF
+      - run: echo $GITHUB_EVENT_PATH

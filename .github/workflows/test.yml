@@ -1,15 +1,21 @@
-on: [push, pull_request]
+on:
+  push:
+    branches: master
+  pull_request:
+    branches: master
+
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
-      run: |
-        echo $GITHUB_RUN_ID
-        echo $GITHUB_ACTION
-        echo $GITHUB_EVENT_PATH
-        echo $GITHUB_SHA
-        echo $GITHUB_REF
-        echo $GITHUB_API_URL
-      
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - run: echo $GITHUB_RUN_ID
+      - run: echo $GITHUB_EVENT_PATH
+      - run: cat ${GITHUB_EVENT_PATH}
+      - run: echo $GITHUB_SHA
+      - run: echo $GITHUB_REF
+      - run: python test.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
