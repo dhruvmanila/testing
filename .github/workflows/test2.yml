@@ -1,5 +1,5 @@
 on:
-  check-run:
+  check_run:
     types: [completed]
 jobs:
   check-run-test:
