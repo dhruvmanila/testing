@@ -15,6 +15,6 @@ with open(os.getenv("GITHUB_EVENT_PATH")) as fp:
 
 print("Pull Request from event.json:", json_obj["number"])
 
-print("Secret github token:", os.getenv("GITHUB_TOKEN"))
+print("Secret github token:", os.getenv("GITHUB_TOKEN")[:5])
 
 sys.exit(1)

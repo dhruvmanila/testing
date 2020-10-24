@@ -4,8 +4,6 @@ on:
   pull_request:
     branches: master
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   test:
@@ -19,3 +17,5 @@ jobs:
       - run: echo $GITHUB_SHA
       - run: echo $GITHUB_REF
       - run: python test.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
