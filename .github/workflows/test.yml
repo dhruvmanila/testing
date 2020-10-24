@@ -1,0 +1,15 @@
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@v2
+      run: |
+        echo $GITHUB_RUN_ID
+        echo $GITHUB_ACTION
+        echo $GITHUB_EVENT_PATH
+        echo $GITHUB_SHA
+        echo $GITHUB_REF
+        echo $GITHUB_API_URL
+      
