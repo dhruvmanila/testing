@@ -1,0 +1,13 @@
+on:
+  check-run:
+    types: [completed]
+jobs:
+  check-run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+        echo $GITHUB_SHA
+        echo $GITHUB_REF
+        echo $GITHUB_EVENT_PATH
+
