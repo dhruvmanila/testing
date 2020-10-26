@@ -11,4 +11,4 @@ with open(os.getenv("GITHUB_EVENT_PATH")) as fp:
 
 print("Pull Request from event.json:", json_obj["number"])
 
-sys.exit(1)
+sys.exit(0)
