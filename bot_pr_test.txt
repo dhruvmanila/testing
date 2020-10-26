@@ -1,0 +1,5 @@
+Testing algorithms-bot with pull request
+This is the 25th iteration, please work.
+What happens when a PR fails again?
+Ok, so nothing happens when a PR fails again. Now I have removed the label manually and other changes to the code. 
+We will also test what happens when the test runs are a success and the label exist.
