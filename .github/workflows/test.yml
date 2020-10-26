@@ -13,9 +13,8 @@ jobs:
       - uses: actions/setup-python@v2
       - run: echo $GITHUB_RUN_ID
       - run: echo $GITHUB_EVENT_PATH
-      - run: cat ${GITHUB_EVENT_PATH}
       - run: echo $GITHUB_SHA
       - run: echo $GITHUB_REF
-      - run: python test.py
+      - run: python check_run_test.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
