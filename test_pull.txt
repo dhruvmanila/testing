@@ -1,3 +1,5 @@
 Editing a file to check for check_run event
 
 A new branch for a new pull request.
+
+What is the synchronize action for pull request event?
