@@ -1,7 +1,14 @@
 def isSafe(A,row,col,visited,N,M) -> bool:
+	"""
+	>>> isSafe(1, 1, 1, 1, 1, 1)
+	False
+	"""
 	return ((row >= 0) and (col >= 0) and (row < N) and (col < M) and A[row][col] and (visited[row][col] == False))
 
 def dfs(A,i,j,visited,N,M) -> None:
+	"""
+	>>> dfs(1, 1, 1, 1, 1, 1)
+	"""
 	row = [-1,-1,-1,0,0,1,1,1]
 	col = [-1,0,1,-1,1,-1,0,1]
 	visited[i][j] = True
@@ -10,6 +17,9 @@ def dfs(A,i,j,visited,N,M) -> None:
 			dfs(A,i+row[k],j+col[k],visited,N,M)
 
 def findIslands(A,N,M) -> None:
+	"""
+	>>> findIslands(1, 1, 1)
+	"""
 	visited = []
 	for i in range(N):
 		V = []
