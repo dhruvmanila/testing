@@ -1,17 +1,16 @@
-def isSafe(Aas: int, row: int, col: int, visited: int, asN: int, asM: int) -> bool:
+def test1(a, b, c):
 	"""
-	>>> isSafe(1, 1, 1, 1, 1, 1)
-	False
+	A test function
 	"""
 	return False
 
-def dfs(Aas: int, asi: int, asj: int, visited: int, Nas: int, asM: int) -> None:
+def test2(d, e, f):
 	"""
-	>>> dfs(1, 1, 1, 1, 1, 1)
+	A test function
 	"""
 	return None
 
-def findIslands(Aas: int, Nas: int, asM: int) -> None:
+def test3(a: int) -> None:
 	"""
 	>>> findIslands(1, 1, 1)
 	"""
