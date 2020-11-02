@@ -1,11 +1,11 @@
-def isSafe(A,row,col,visited,N,M) -> bool:
+def isSafe(Aas,row,col,visited,asN,asM) -> bool:
 	"""
 	>>> isSafe(1, 1, 1, 1, 1, 1)
 	False
 	"""
 	return ((row >= 0) and (col >= 0) and (row < N) and (col < M) and A[row][col] and (visited[row][col] == False))
 
-def dfs(A,i,j,visited,N,M) -> None:
+def dfs(Aas,asi,asj,visited,Nas,asM) -> None:
 	"""
 	>>> dfs(1, 1, 1, 1, 1, 1)
 	"""
@@ -16,7 +16,7 @@ def dfs(A,i,j,visited,N,M) -> None:
 		if(isSafe(A,i+row[k],j+col[k],visited,N,M)):
 			dfs(A,i+row[k],j+col[k],visited,N,M)
 
-def findIslands(A,N,M) -> None:
+def findIslands(Aas,Nas,asM) -> None:
 	"""
 	>>> findIslands(1, 1, 1)
 	"""
