@@ -14,6 +14,6 @@ jobs:
       - run: echo $GITHUB_RUN_ID
       - run: echo $GITHUB_EVENT_PATH
       - run: echo $GITHUB_REF
-      - run: python check_run_test.py
+      - run: python check_run.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
