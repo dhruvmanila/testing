@@ -1,3 +1,15 @@
+class TestClass:
+	classattr = 10
+	def __init__(self, x, y):
+		self.x = None
+		self.y = None
+	
+	def add(x, y):
+		return x + y
+	
+	def subtract(x, y):
+		return x - y
+
 def test1(a, b, c):
 	"""
 	A test function
