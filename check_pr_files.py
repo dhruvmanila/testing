@@ -4,10 +4,10 @@ class TestClass:
 		self.x = None
 		self.y = None
 	
-	def add(x, y):
+	def add(self, x, y):
 		return x + y
 	
-	def subtract(x, y):
+	def subtract(self, x, y):
 		return x - y
 
 def test1(a, b, c):
@@ -24,7 +24,7 @@ def test2(d, e, f):
 
 def test3(a: int) -> None:
 	"""
-	>>> findIslands(1, 1, 1)
+	>>> test3(1)
 	"""
 	return None
 
