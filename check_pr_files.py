@@ -26,8 +26,7 @@ class TClass:
 	
 	def add(self, aab: int, bab: int) -> int:
 		"""
-		>>> add(5, 10)
-		15
+		Add two numbers
 		"""
 		return a + b
 
