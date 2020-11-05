@@ -1,4 +1,4 @@
-def test1(abc, bbc, cbc):
+def test1(abc: int, bbc: int, cbc: int) -> bool:
 	"""
 	A test function
 	>>> test1()
@@ -6,7 +6,7 @@ def test1(abc, bbc, cbc):
 	"""
 	return False
 
-def test2(deaf, eef, fef):
+def test2() -> None:
 	"""
 	A test function
 	>>> test2()
@@ -21,10 +21,10 @@ def test3(ant: int) -> None:
 	return None
 
 class TClass:
-	def __init__(self, test):
+	def __init__(self, test: str) -> None:
 		self.test = test
 	
-	def add(self, aab, bab):
+	def add(self, aab: int, bab: int) -> int:
 		"""
 		>>> add(5, 10)
 		15
