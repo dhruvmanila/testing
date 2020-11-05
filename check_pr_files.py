@@ -16,5 +16,12 @@ def test3(a: int) -> None:
 	"""
 	return None
 
+class T:
+	def __init__(self, test):
+		self.test = test
+	
+	def add(self, a, b):
+		return a + b
+
 if __name__ == '__main__':
 	pass
