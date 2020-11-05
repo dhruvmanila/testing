@@ -6,7 +6,7 @@ def test1(abc: int, bbc: int, cbc: int) -> bool:
 	"""
 	return False
 
-def test2() -> None:
+def t():
 	"""
 	A test function
 	>>> test2()
