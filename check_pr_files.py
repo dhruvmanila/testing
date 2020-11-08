@@ -1,16 +1,16 @@
-def test1(a):
+def test1(test: bool) -> bool:
 	"""
 	A test function
 	"""
 	return False
 
-def test2(d):
+def test2(test: int) -> None:
 	"""
 	A test function
 	"""
 	return None
 
-def test3(e: int) -> None:
+def test3(test: int) -> None:
 	"""
 	>>> test3(1, 1, 1)
 	"""
@@ -18,10 +18,10 @@ def test3(e: int) -> None:
 
 
 class TClass:
-	def __init__(self, test: str):
+	def __init__(self, test: str) -> None:
 		self.test = test
 
-	def add(self, a: int, b: int) -> int:
+	def add(self, num1: int, num2: int) -> int:
 		"""
 		Add two numbers
 		"""
