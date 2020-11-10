@@ -4,19 +4,6 @@ def test1(a):
 	"""
 	return False
 
-def test2(d):
-	"""
-	A test function
-	"""
-	return None
-
-def test3(e: int) -> None:
-	"""
-	>>> test3(1, 1, 1)
-	"""
-	return None
-
-
 class TClass:
 	def __init__(self, test: str) -> None:
 		self.test = test
