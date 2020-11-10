@@ -18,7 +18,7 @@ def test3(e: int) -> None:
 
 
 class TClass:
-	def __init__(self, test: str) -> None:
+	def __init__(self, test) -> None:
 		self.test = test
 
 	def add(self, a: int, b: int) -> int:
