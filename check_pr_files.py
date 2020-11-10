@@ -1,18 +1,23 @@
 def test1(a):
 	"""
 	A test function
+	>>> test1()
+	False
 	"""
 	return False
 
 def test2(d):
 	"""
 	A test function
+	>>> test2()
+	None
 	"""
 	return None
 
 def test3(e: int) -> None:
 	"""
 	>>> test3(1, 1, 1)
+	None
 	"""
 	return None
 
@@ -24,6 +29,8 @@ class TClass:
 	def add(self, a: int, b: int) -> int:
 		"""
 		Add two numbers
+		>>> add(1, 1)
+		2
 		"""
 		return a + b
 
