@@ -1,4 +1,4 @@
-def test1(a):
+def test1(test):
 	"""
 	A test function
 	"""
@@ -8,7 +8,7 @@ class TClass:
 	def __init__(self, test: str) -> None:
 		self.test = test
 
-	def add(self, a: int, b: int) -> int:
+	def add(self, num1: int, num2: int) -> int:
 		"""
 		Add two numbers
 		"""
