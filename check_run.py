@@ -17,13 +17,28 @@ _DELIMITER = "EOF"
 def setenv(name: str, value: str) -> None:
     """Creates or updates an environment variable for any actions running next in a
     job."""
-    file_path = os.environ.get("GITHUB_ENV", "")
-    cmd_value = f"{name}<<{_DELIMITER}{os.linesep}{value}{os.linesep}{_DELIMITER}"
-    print(cmd_value)
-    with open(file_path, "a") as file_handle:
-        file_handle.write(cmd_value + os.linesep)
+    # {name}<<{delimiter}
+    # {value}
+    # {delimiter}
+    write_value = f"{name}<<{_DELIMITER}{os.linesep}{value}{os.linesep}{_DELIMITER}"
+    with open(os.environ["GITHUB_ENV"], "a") as env_file:
+        env_file.write(write_value + os.linesep)
+
+
+def addpath(path: str) -> None:
+    """Prepends a directory to the system PATH variable for all subsequent actions
+    in the current job."""
+    with open(os.environ["GITHUB_PATH"], "a") as path_file:
+        path_file.write(path + os.linesep)
 
 
 setenv("HELLO", "WORLD")
 setenv("FROM", "CHANGED")
+print(sys.path)
+addpath("/path/to/directory")
+print(sys.path)
+
+with open(os.environ["GITHUB_PATH"]) as path_file:
+    print(path_file.read())
+
 sys.exit(0)
