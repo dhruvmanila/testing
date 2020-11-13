@@ -15,8 +15,10 @@ jobs:
       - run: echo $GITHUB_EVENT_PATH
       - run: echo $GITHUB_REF
       - run: echo $GITHUB_ENV
+      - run: echo "HELLO=WORLD" >> $GITHUB_ENV
       - run: cat $GITHUB_ENV
       - run: echo $GITHUB_PATH
+      - run: echo "path/to/some/dir" >> $GITHUB_PATH
       - run: cat $GITHUB_PATH
       - run: python check_run.py
         env:
