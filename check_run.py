@@ -34,11 +34,15 @@ def addpath(path: str) -> None:
 
 setenv("HELLO", "WORLD")
 setenv("FROM", "CHANGED")
-print(sys.path)
+
 addpath("/path/to/directory")
+addpath("/use/bin/local")
 print(sys.path)
 
-with open(os.environ["GITHUB_PATH"]) as path_file:
-    print(path_file.read())
+with open(env) as f:
+    print(f.read())
+
+with open(path) as f:
+    print(f.read())
 
 sys.exit(0)
