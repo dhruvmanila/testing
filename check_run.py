@@ -23,9 +23,14 @@ def addpath(path: str) -> None:
     with open(os.environ["GITHUB_PATH"], "a") as path_file:
         path_file.write(path + os.linesep)
 
+t = """This
+is
+a
+multiline
+string"""
 
 setenv("HELLO", "WORLD")
-setenv("FROM", "CHANGED")
+setenv("FROM", t)
 
 addpath("/path/to/directory")
 addpath("/use/bin/local")
