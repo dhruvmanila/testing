@@ -25,4 +25,5 @@ def setenv(name: str, value: str) -> None:
 
 
 setenv("HELLO", "WORLD")
+setenv("FROM", "CHANGED")
 sys.exit(0)
