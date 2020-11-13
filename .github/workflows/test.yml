@@ -11,19 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - run: echo $GITHUB_RUN_ID
-      - run: echo $GITHUB_EVENT_PATH
-      - run: echo $GITHUB_REF
       - run: echo $GITHUB_ENV
-      - run: echo "HELLO=WORLD" >> $GITHUB_ENV
-      - run: |
-          echo 'JSON_RESPONSE<<EOF' >> $GITHUB_ENV
-          curl https://httpbin.org/json >> $GITHUB_ENV
-          echo 'EOF' >> $GITHUB_ENV
+      - run: echo "FROM=WORKFLOW" >> $GITHUB_ENV
       - run: cat $GITHUB_ENV
-      - run: echo $GITHUB_PATH
-      - run: echo "/path/to/some/dir" >> $GITHUB_PATH
-      - run: cat $GITHUB_PATH
       - run: python check_run.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: cat $GITHUB_ENV
