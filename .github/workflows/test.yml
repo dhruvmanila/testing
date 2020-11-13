@@ -14,5 +14,7 @@ jobs:
       - run: echo $GITHUB_ENV
       - run: echo "FROM=WORKFLOW" >> $GITHUB_ENV
       - run: cat $GITHUB_ENV
+      - run: echo $PATH
       - run: python check_run.py
       - run: cat $GITHUB_ENV
+      - run: echo $PATH
