@@ -15,8 +15,9 @@ _DELIMITER = "EOF"
 
 
 def setenv(name: str, value: str) -> None:
-    with open(os.environ["GITHUB_ENV"], "a") as env_file:
-        env_file.write(f"{name}={value}" + os.linesep)
+    write_value = f"{name}<<{_DELIMITER}{os.linesep}{value}{os.linesep}{_DELIMITER}"
+    with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as file:
+        file.write(write_value + os.linesep)
 
 
 def addpath(path: str) -> None:
