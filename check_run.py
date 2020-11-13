@@ -24,7 +24,8 @@ def addpath(path: str) -> None:
     with open(os.environ["GITHUB_PATH"], "a") as path_file:
         path_file.write(path + os.linesep)
 
-t = """This
+t = """\
+This
 is
 a
 multiline
