@@ -11,8 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - run: echo $GITHUB_ENV
       - run: echo "FROM=WORKFLOW" >> $GITHUB_ENV
+      - run: echo $FROM
       - run: echo $PATH
       - run: python check.py
+      - run: echo $HELLO $FROM $CHANGED
       - run: echo $PATH
