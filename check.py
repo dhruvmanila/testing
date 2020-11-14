@@ -1,9 +1,5 @@
 import sys
 import os
-import json
-
-print(os.getenv("GITHUB_REF"))
-print(os.getenv("GITHUB_EVENT_PATH"))
 
 env = os.getenv("GITHUB_ENV")
 path = os.getenv("GITHUB_PATH")
@@ -22,25 +18,20 @@ def setenv(name: str, value: str) -> None:
 
 def addpath(path: str) -> None:
     with open(os.environ["GITHUB_PATH"], "a") as path_file:
-        path_file.write(path + os.linesep)
+        path_file.write(str(path) + os.linesep)
 
-t = """\
-This
-is
-a
-multiline
-string"""
-
+        
 setenv("HELLO", "WORLD")
-setenv("FROM", t)
+setenv("CHANGED", "FALSE")
+setenv("CHANGED", "TRUE")
 
 addpath("/path/to/directory")
 addpath("/use/bin/local")
 
 with open(env) as f:
-    print(f.read())
+    print(f.read(), end=f"{os.linesep}{os.linesep}")
 
 with open(path) as f:
-    print(f.read())
+    print(f.read(), end=f"{os.linesep}{os.linesep}")
 
 sys.exit(0)
