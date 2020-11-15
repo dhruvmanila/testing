@@ -1,4 +1,4 @@
-def t(test: int):
+def test1(test: int):
 	"""
 	A test function
 	>>> test1()
