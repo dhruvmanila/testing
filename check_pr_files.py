@@ -1,11 +1,11 @@
-def test1(a):
+def test1(abc: int) -> bool:
 	"""
 	A test function
 	"""
 	return False
 
 
-def test3(e: int) -> None:
+def test3(efg: int) -> None:
 	"""
 	>>> test3(1, 1, 1)
 	"""
@@ -16,7 +16,7 @@ class TClass:
 	def __init__(self, test: str) -> None:
 		self.test = test
 
-	def add(self, a: int, b: int) -> int:
+	def add(self, ab: int, bd: int) -> int:
 		"""
 		Add two numbers
 		"""
