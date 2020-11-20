@@ -1,4 +1,4 @@
-def test1(abc: int) -> bool:
+def test1(abc: int):
 	"""
 	A test function
 	"""
