@@ -5,9 +5,9 @@ def test1(abc: int):
 	return False
 
 
-def test3(efg: int) -> None:
+def test2(efg: int) -> None:
 	"""
-	>>> test3(1, 1, 1)
+	>>> test2(1, 1, 1)
 	"""
 	return None
 
