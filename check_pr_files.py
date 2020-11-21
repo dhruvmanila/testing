@@ -4,11 +4,6 @@ def test1(a):
 	"""
 	return False
 
-def test2(d):
-	"""
-	A test function
-	"""
-	return None
 
 def test3(e: int) -> None:
 	"""
