@@ -10,6 +10,7 @@ def test1(abc: int) -> bool:
 def test2(efg: int) -> None:
 	"""
 	>>> test2(1, 1, 1)
+	None
 	"""
 	return None
 
