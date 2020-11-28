@@ -1,9 +1,14 @@
 import sys
 import os
 import json
+from pprint import pprint
 
-print(os.getenv("GITHUB_REF"))
-print("Pull request:", os.getenv("GITHUB_REF").split("/")[2])
-print(os.getenv("GITHUB_EVENT_PATH"))
+event_path = os.getenv("GITHUB_EVENT_PATH")
+print("Event path:", event_path)
 
+with open(event_path) as f:
+  event = json.load(f)
+
+pprint(event)
+  
 sys.exit(0)
