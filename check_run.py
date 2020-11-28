@@ -9,6 +9,6 @@ print("Event path:", event_path)
 with open(event_path) as f:
   event = json.load(f)
 
-pprint(event)
+pprint(event["number"])
   
 sys.exit(0)
