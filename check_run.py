@@ -12,5 +12,6 @@ with open(event_path) as f:
   event = json.load(f)
 
 pprint(event["number"])
+print(os.getcwd())
   
 sys.exit(0)
