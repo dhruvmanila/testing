@@ -3,6 +3,8 @@ import os
 import json
 from pprint import pprint
 
+print(os.getenv("GITHUB_API_URL"))
+
 event_path = os.getenv("GITHUB_EVENT_PATH")
 print("Event path:", event_path)
 
