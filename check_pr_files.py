@@ -7,6 +7,13 @@ def test1(abc: int) -> bool:
 	return False
 
 
+def test3(e: int) -> None:
+	"""
+	>>> test3(1, 1, 1)
+	"""
+	return None
+
+
 class TClass:
 	def __init__(self, test: str) -> None:
 		self.test = test
