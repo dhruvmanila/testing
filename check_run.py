@@ -12,6 +12,7 @@ print("Event path:", event_path)
 with open(event_path) as f:
   event = json.load(f)
 
+print(event["url"] + "/files")
 pprint(event["number"])
 print(os.getcwd())
   
