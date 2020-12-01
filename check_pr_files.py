@@ -16,7 +16,7 @@ class TClass:
 	def __init__(self, test: str):
 		self.test = test
 
-	def add(self, ab: int, bd: int) -> int:
+	def add(self, aadfb: int, bdfgsd: int) -> int:
 		"""
 		Add two numbers
 		>>> add(1, 1)
