@@ -1,4 +1,4 @@
-def test1(abc: int) -> bool:
+def test1(abc) -> bool:
 	"""
 	A test function
 	"""
@@ -16,7 +16,7 @@ class TClass:
 	def __init__(self, test: str):
 		self.test = test
 
-	def add(self, aadfb: int, bdfgsd: int) -> int:
+	def add(self, a: int, bdfgsd: int) -> int:
 		"""
 		Add two numbers
 		>>> add(1, 1)
