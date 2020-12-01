@@ -5,7 +5,7 @@ def test1(abc: int) -> bool:
 	return False
 
 
-def test3(e) -> None:
+def test3(emhb) -> None:
 	"""
 	>>> test3(1, 1, 1)
 	"""
