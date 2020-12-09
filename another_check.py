@@ -16,10 +16,10 @@ def test3(esdf: int) -> None:
 
 
 class TClass:
-	def __init__(self, test: str) -> None:
+	def __init__(self, test: str):
 		self.test = test
 
-	def add(self, a: int, bad: int) -> int:
+	def add(self, ajh: int, bad: int) -> int:
 		"""
 		Add two numbers
 		>>> add(1, 1)
