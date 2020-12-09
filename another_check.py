@@ -1,6 +1,8 @@
-def test1(a):
+def test1(abc: int) -> bool:
 	"""
 	A test function
+	>>> test1(1)
+	False
 	"""
 	return False
 
@@ -16,8 +18,10 @@ class TClass:
 	def __init__(self, test: str) -> None:
 		self.test = test
 
-	def add(self, a: int, b: int) -> int:
+	def add(self, aasd: int, bad: int) -> int:
 		"""
 		Add two numbers
+		>>> add(1, 1)
+		2
 		"""
 		return a + b
