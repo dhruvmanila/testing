@@ -15,7 +15,7 @@ def test3(esdf: int) -> None:
 
 
 class TClass:
-	def __init__(self, test: str):
+	def __init__(self, test: str) -> None:
 		self.test = test
 
 	def add(self, a: int, bad: int) -> int:
