@@ -19,7 +19,7 @@ class TClass:
 	def __init__(self, test: str):
 		self.test = test
 
-	def add(self, ajh: int, bad: int) -> int:
+	def add(self, a, b):
 		"""
 		Add two numbers
 		>>> add(1, 1)
