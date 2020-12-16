@@ -1,4 +1,3 @@
-"""
 def foo(abc: int) -> bool:
     """
     A test function
