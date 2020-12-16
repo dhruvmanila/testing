@@ -1,18 +1,21 @@
-def test1(a):
+def bar(a):
 	"""
 	A test function
 	"""
 	return False
 
 
-def test3(e: int) -> None:
+def foo(e: int) -> None:
 	"""
-	>>> test3(1, 1, 1)
+	>>> foo(1)
 	"""
 	return None
 
 
-class TClass:
+class Spam:
+	"""
+	>>> Spam()
+	"""
 	def __init__(self, test: str) -> None:
 		self.test = test
 
@@ -21,6 +24,11 @@ class TClass:
 		Add two numbers
 		"""
 		return a + b
+
+
+def baz():
+	pass
+
 
 if __name__ == '__main__':
 	pass
