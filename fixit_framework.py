@@ -1,12 +1,8 @@
 """
->>> foo()
-False
-"""
-
-
 def foo(abc: int) -> bool:
     """
     A test function
+    >>> foo(1)
     """
     return False
 
@@ -25,11 +21,15 @@ class Spam:
     def add(self, asf: int, sfb: int) -> int:
         """
         Add two numbers
+        >>> add(1, 1)
         """
         return a + b
 
 
 def baz() -> None:
+    """
+    >>> baz()
+    """
     pass
 
 
