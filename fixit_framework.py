@@ -1,11 +1,12 @@
-def foo(a):
+def foo(abc: int) -> bool:
     """
     A test function
+    >>> foo()
     """
     return False
 
 
-def bar(e: int) -> None:
+def bar(edsf: int) -> None:
     """
     >>> bar(1, 1, 1)
     """
@@ -13,17 +14,20 @@ def bar(e: int) -> None:
 
 
 class Spam:
+    """
+    >>> Spam()
+    """
     def __init__(self, test: str) -> None:
         self.test = test
 
-    def add(self, a: int, b: int) -> int:
+    def add(self, asf: int, sfb: int) -> int:
         """
         Add two numbers
         """
         return a + b
 
 
-def baz():
+def baz() -> None:
     pass
 
 
