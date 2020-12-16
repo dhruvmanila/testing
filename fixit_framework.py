@@ -1,7 +1,12 @@
+"""
+>>> foo()
+False
+"""
+
+
 def foo(abc: int) -> bool:
     """
     A test function
-    >>> foo()
     """
     return False
 
@@ -14,9 +19,6 @@ def bar(edsf: int) -> None:
 
 
 class Spam:
-    """
-    >>> Spam()
-    """
     def __init__(self, test: str) -> None:
         self.test = test
 
