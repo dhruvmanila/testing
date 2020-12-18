@@ -1,3 +1,4 @@
+# Add a random comment
 def foo(abc: int) -> bool:
     """
     A test function
