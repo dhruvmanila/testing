@@ -1,2 +1,5 @@
-def nonsense(x):
-    return float(x) + str(x)
+def nonsense(hello: str) -> str:
+    """
+    >>> nonsense("world")
+    """
+    return hello
