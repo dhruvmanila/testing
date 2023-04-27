@@ -11,22 +11,23 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Generate Comment
         id: generate-comment
         run: |
           echo 'comment<<EOF' >> $GITHUB_OUTPUT
           echo '## PR Check Results' >> $GITHUB_OUTPUT
 
-          if [[ -f ruff_ci_test/ecosystem_result.md ]]
+          if [[ -f ./ruff_ci_test/ecosystem_result.md ]]
           then
             echo "### Ecosystem" >> $GITHUB_OUTPUT
-            cat ruff_ci_test/ecosystem_result.md >> $GITHUB_OUTPUT
+            cat ./ruff_ci_test/ecosystem_result.md >> $GITHUB_OUTPUT
             echo "" >> $GITHUB_OUTPUT
           fi
 
-          if [[ -f ruff_ci_test/summary.md ]]
+          if [[ -f ./ruff_ci_test/summary.md ]]
           then
-            cat ruff_ci_test/summary.md >> $GITHUB_OUTPUT
+            cat ./ruff_ci_test/summary.md >> $GITHUB_OUTPUT
           fi
 
           echo 'EOF' >> $GITHUB_OUTPUT
