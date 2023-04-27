@@ -37,6 +37,6 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           pr_number: ${{ steps.pr-number.outputs.pr-number }}
-          filePath: ${{ env.GITHUB_WORKSPACE/ruff_ci_test/summary.md }}
+          filePath: "${{ github.workspace }}/ruff_ci_test/summary.md"
           # message: ${{ steps.generate-comment.outputs.comment }}
           comment_tag: PR Check Results
