@@ -37,5 +37,6 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           pr_number: ${{ steps.pr-number.outputs.pr-number }}
-          message: ${{ steps.generate-comment.outputs.comment }}
+          filePath: ./ruff_ci_test/summary.md
+          # message: ${{ steps.generate-comment.outputs.comment }}
           comment_tag: PR Check Results
